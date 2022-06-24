@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseBusinessActivity"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Business"
+        android:fontFamily="@font/montserrat_medium"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"/>
+
+    <RelativeLayout
+        android:id="@+id/business1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_edge"
+        android:clickable="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileBusiness"
+            android:layout_marginTop="10dp"
+            android:layout_width="40dp"
+            android:layout_height="39dp"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            app:civ_circle_background_color="@color/grayDate"/>
+
+        <TextView
+            android:id="@+id/tv_businessName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/profileBusiness"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="PT Sejahtera"
+            android:textAllCaps="false"
+            android:textColor="@color/blue"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="As Owner"
+            android:textColor="@color/gray"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="13sp"
+            android:layout_below="@+id/tv_businessName"
+            android:layout_toEndOf="@+id/profileBusiness"
+            android:layout_marginStart="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/business2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/round_edge"
+        android:clickable="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileBusiness1"
+            android:layout_width="40dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            app:civ_circle_background_color="@color/grayDate" />
+
+        <TextView
+            android:id="@+id/tv_businessName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/profileBusiness1"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="PT Kasih Sayang"
+            android:textColor="@color/blue"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_businessName1"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/profileBusiness1"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="As Employee"
+            android:textColor="@color/gray"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_createMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_blue_small"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:text="Create More"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:fontFamily="@font/montserrat_medium"
+        android:textSize="20sp"/>
+
+</LinearLayout>

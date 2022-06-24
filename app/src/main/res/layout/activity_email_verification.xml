@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmailVerification"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/btn_backArrowEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/btn_back"
+        app:srcCompat="@drawable/ic_back_arrow"
+        app:tint="#000000" />
+
+    <TextView
+        android:id="@+id/verificationEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/verif"
+        android:textColor="@color/black"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/descVerificationEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/verif_desc"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/emailForVerification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/example_email"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/codeNumber1"
+            android:layout_width="65dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="63dp"
+            android:background="@drawable/email_verification"
+            android:ems="10"
+            android:enabled="true"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:inputType="number"
+            android:text="2"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            android:focusableInTouchMode="true"
+            android:cursorVisible="false"
+            android:focusable="false"/>
+
+        <EditText
+            android:id="@+id/codeNumber2"
+            android:layout_width="65dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="63dp"
+            android:background="@drawable/email_verification"
+            android:ems="10"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:inputType="number"
+            android:text="8"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            android:layout_toEndOf="@+id/codeNumber1"
+            android:focusableInTouchMode="true"
+            android:cursorVisible="false"
+            android:focusable="false"/>
+
+        <EditText
+            android:id="@+id/codeNumber3"
+            android:layout_width="65dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="63dp"
+            android:background="@drawable/email_verification"
+            android:ems="10"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:inputType="number"
+            android:text="6"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            android:layout_toEndOf="@+id/codeNumber2"
+            android:focusableInTouchMode="true"
+            android:cursorVisible="false"
+            android:focusable="false"/>
+
+        <EditText
+            android:id="@+id/codeNumber4"
+            android:layout_width="65dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="63dp"
+            android:background="@drawable/email_verification"
+            android:ems="10"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:inputType="number"
+            android:text="5"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            android:layout_toEndOf="@+id/codeNumber3"
+            android:focusableInTouchMode="true"
+            android:cursorVisible="false"
+            android:focusable="false"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/getCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/resend_code"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btn_resend"
+            android:layout_width="61dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/getCode"
+            android:background="@drawable/btn_transparent"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/resend"
+            android:textAllCaps="false"
+            android:textColor="@color/blue_text"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_loginFromVerification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/btn_light_small"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/btn_login"
+        android:textColor="@color/blue"
+        android:textSize="20sp"/>
+
+    <TableLayout
+        android:layout_width="400dp"
+        android:layout_height="347dp"
+        android:layout_marginTop="90dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/number1"
+                android:layout_width="133dp"
+                android:layout_height="89dp"
+                android:background="@drawable/btn_transparent"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/number2"
+                android:layout_width="134dp"
+                android:layout_height="89dp"
+                android:background="@drawable/btn_transparent"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:text="2"
+                android:textColor="@color/black"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/number3"
+                android:layout_width="134dp"
+                android:layout_height="89dp"
+                android:background="@drawable/btn_transparent"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:text="3"
+                android:textColor="@color/black"
+                android:textSize="40sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/number4"
+                android:layout_width="133dp"
+                android:layout_height="89dp"
+                android:background="@drawable/btn_transparent"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:text="4"
+                android:textColor="@color/black"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/number5"
+                android:layout_width="134dp"
+                android:layout_height="89dp"
+                android:background="@drawable/btn_transparent"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/number6"
+                android:layout_width="134dp"
+                android:layout_height="89dp"
+                android:background="@drawable/btn_transparent"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:text="6"
+                android:textColor="@color/black"
+                android:textSize="40sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/number7"
+                android:layout_width="133dp"
+                android:layout_height="89dp"
+                android:background="@drawable/btn_transparent"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:text="7"
+                android:textColor="@color/black"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/number8"
+                android:layout_width="134dp"
+                android:layout_height="89dp"
+                android:background="@drawable/btn_transparent"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:text="8"
+                android:textColor="@color/black"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/number9"
+                android:layout_width="134dp"
+                android:layout_height="89dp"
+                android:background="@drawable/btn_transparent"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:text="9"
+                android:textColor="@color/black"
+                android:textSize="40sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/dot"
+                android:layout_width="133dp"
+                android:layout_height="82dp"
+                android:background="@drawable/btn_transparent"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:text="."
+                android:textColor="@color/black"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/number0"
+                android:layout_width="134dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_transparent"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="40sp" />
+
+            <ImageButton
+                android:id="@+id/deleteNumber"
+                android:layout_width="134dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_transparent"
+                android:src="@drawable/ic_delete"
+                app:tint="@color/black" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

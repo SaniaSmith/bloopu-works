@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateBusinessActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="318dp"
+        android:layout_height="118dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        app:srcCompat="@drawable/logo_dark_remove_bg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Entrepreneurs!"
+        android:fontFamily="@font/montserrat_medium"
+        android:textSize="21sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create your business name"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:textSize="17sp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp">
+
+        <ImageView
+            android:id="@+id/building"
+            android:layout_width="45dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="43dp"
+            app:srcCompat="@drawable/ic_building"
+            app:tint="@color/black" />
+
+        <EditText
+            android:id="@+id/inputBusiness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="43dp"
+            android:layout_toEndOf="@+id/email3"
+            android:background="@drawable/input"
+            android:ems="10"
+            android:fontFamily="@font/montserrat_medium"
+            android:hint="Enter your business name"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hint"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_setUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_light_small"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="set up"
+        android:textColor="@color/blue"
+        android:textSize="20sp" />
+
+
+</LinearLayout>
