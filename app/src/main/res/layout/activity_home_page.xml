@@ -43,7 +43,7 @@
 
             <TextView
                 android:id="@+id/employee_name"
-                android:layout_width="330dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/appsname"
                 android:layout_marginStart="20dp"
@@ -55,7 +55,7 @@
 
             <TextView
                 android:id="@+id/employee_position"
-                android:layout_width="330dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/employee_name"
                 android:layout_marginStart="20dp"
